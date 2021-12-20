@@ -1,0 +1,76 @@
+.rock {
+    background-color: rgb(148, 81, 81);
+    color: white;
+}
+.ghost {
+    background-color: rgb(247, 247, 247);
+}
+.electric {
+    background-color: rgb(255, 255, 161);
+}
+.bug {
+    background-color: #F6D6A7;
+}
+.poison {
+    background-color: #e0a7f6;
+}
+.normal, .psychic {
+    background-color: #F4F4F4;
+}
+.fairy {
+    background-color: rgba(255, 192, 203, 0.863);
+}
+.fire, .fighting {
+    background-color: #FBE3DF;
+}
+.grass {
+    background-color:#E2F9E1;
+}
+.water, .ice {
+    background-color:#E0F1FD;
+}
+.ground {
+    background-color:#7bc1f3;
+}
+
+.thumb-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 0 ;
+    min-width: 150px;
+    margin: 0.3rem;
+    border: 1px solid #efefef;
+    border-radius: 0.2rem;
+    text-align: center;
+    box-shadow: 1 5px 15px rgba(245, 238, 238, 0.089);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.thumb-container:hover {
+    transform: scale(1.2);
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 8px;
+    color: #e4eee7;
+    z-index: 5;
+}
+
+.thumb-container .number {
+    border-radius: 1rem;
+    padding: 0.2rem 0.4rem;
+    background-color: rgba(255,255,255,0.3);
+}
+.thumb-container img {
+    margin-top: 10px;
+    width: 110px;
+    height: 110px;
+}
+.thumb-container small {
+    text-transform: capitalize;
+}
+.detail-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
