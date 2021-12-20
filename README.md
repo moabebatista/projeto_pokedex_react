@@ -2,13 +2,13 @@
 
 - O presente projeto foi desenvolvido com ReactJs.
 
-#### :arrow_right:Objetivos
+#### :arrow_right: Objetivos
 
 - Prática com os Hooks [UseEffect](https://pt-br.reactjs.org/docs/hooks-intro.html) e [useState](https://pt-br.reactjs.org/docs/hooks-intro.html);
 - Requisições e Assincronismo;
 - Utilização da API externa [PokeApi](https://pokeapi.co/docs/v2#pokemon);
 
-##### :arrow_right:Funcionalidade Aplicadas no Projeto
+##### :arrow_right: Funcionalidade Aplicadas no Projeto
 
 - Lista de Pokémos contendo Informações parcias de cada pokemon, como: Id, imagem, nome e tipo;
 - Input para filtrar um pokemon pelo nome que abre um modal com o Status do Pokemon solicitado contendo: nome, imagem, peso, altura, HP, Attack, Defence e Speed;
