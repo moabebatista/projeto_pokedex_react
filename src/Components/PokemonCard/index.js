@@ -8,7 +8,6 @@ const PokemonCard = ({id, image, name, type, allPokemons, setPokeBusca, setModal
         setPokeBusca(pokemon);
         setModalVisible(true);
         setNamePokemon('');
-        console.log(nome);
     }
 
     const style = type + " card-container";

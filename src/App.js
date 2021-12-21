@@ -59,7 +59,7 @@ const App = () => {
    setScrollX(x)
  }
 
- const handleClickPokemon = (arrayPokemons, nome) => {
+ const handleClickBuscarPokemon = (arrayPokemons, nome) => {
 
     const pokemon = arrayPokemons.filter( poke => poke.name === nome)
 
@@ -88,7 +88,7 @@ const App = () => {
         value={namePokemon}
       />
       <button 
-        onClick= {() => handleClickPokemon(allPokemons, namePokemon.toLowerCase())}
+        onClick= {() => handleClickBuscarPokemon(allPokemons, namePokemon.toLowerCase())}
       >
         Buscar
       </button>
