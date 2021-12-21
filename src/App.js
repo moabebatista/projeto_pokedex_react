@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import PokemonThumb from './Components/PokemonThumb';
+import PokemonCard from './Components/PokemonCard';
 import ModalBusca from './Components/ModalBusca';
 import left from './assets/seta-esquerda-branca.svg';
 import rigth from './assets/seta-direita-branca.svg';
@@ -109,12 +109,16 @@ const App = () => {
           }}
         >
           {allPokemons.map( (pokemonStats, index) => 
-            <PokemonThumb
+            <PokemonCard
               key={index}
               id={pokemonStats.id}
               image={pokemonStats.sprites.other.dream_world.front_default}
               name={pokemonStats.name}
               type={pokemonStats.types[0].type.name}
+              setPokeBusca={ setPokeBusca}
+              setModalVisible={setModalVisible}
+              setNamePokemon={setNamePokemon}
+              allPokemons={allPokemons}
             />)}
           
         </div>

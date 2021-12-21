@@ -14,9 +14,11 @@ const ModalBusca = ({setModalVisible, pokeBusca, setNamePokemon,  setPokeBusca})
     }
 
     return (
-        <div className="background--modal">
+        <div 
+        className="background--modal"
+        onClick={() => handleCloseModal()}
+        >
             <div className='modal-busca'>
-                <h1 classeName="btn-close" onClick={() => handleCloseModal()}>closed</h1>
                 <div classeName="image-pokemon">
                     <h4>{pokeBusca[0].name.toUpperCase()}</h4>
                     <img 
@@ -27,7 +29,10 @@ const ModalBusca = ({setModalVisible, pokeBusca, setNamePokemon,  setPokeBusca})
                     <p>Height: {pokeBusca[0].height}"</p>
                 </div>
                 <div className="detail-wrapper-modal">
-                    <h2>Status</h2>
+                    <div className="titulo--modal">
+                    <h1>Status</h1>
+                    <h2 classeName="btn-close" onClick={() => handleCloseModal()}>closed</h2>
+                    </div>
                     <div className="detail-caracteristcas">
                         <small><img src={coracao} alt="coração" />HP: {pokeBusca[0].stats[0].base_stat}</small>
                         <small><img src={espada} alt="espada" />Attack: {pokeBusca[0].stats[1].base_stat}</small>

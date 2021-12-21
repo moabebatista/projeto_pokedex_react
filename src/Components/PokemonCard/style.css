@@ -33,7 +33,7 @@
     background-color:#7bc1f3;
 }
 
-.thumb-container {
+.card-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,25 +48,25 @@
     transition: all 0.3s;
     cursor: pointer;
 }
-.thumb-container:hover {
-    transform: scale(1.2);
+.card-container:hover {
+    transform: scale(1.1);
     background-color: rgba(255, 255, 255, 0);
     border-radius: 8px;
     color: #e4eee7;
-    z-index: 5;
+    z-index: 4;
 }
 
-.thumb-container .number {
+.card-container .number {
     border-radius: 1rem;
     padding: 0.2rem 0.4rem;
     background-color: rgba(255,255,255,0.3);
 }
-.thumb-container img {
+.card-container img {
     margin-top: 10px;
     width: 110px;
     height: 110px;
 }
-.thumb-container small {
+.card-container small {
     text-transform: capitalize;
 }
 .detail-wrapper {
