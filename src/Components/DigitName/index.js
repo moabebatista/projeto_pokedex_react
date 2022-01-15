@@ -1,6 +1,10 @@
+import { useContext } from 'react';
+import UserContext from '../../contexts/UserContext';
 import './style.css';
 
-const DigitName = ({setAlertDigite}) => {
+const DigitName = () => {
+    const {setAlertDigite} = useContext(UserContext);
+    
     const handleClick = () => {
         setAlertDigite(false);
     }

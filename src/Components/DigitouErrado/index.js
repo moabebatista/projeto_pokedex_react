@@ -1,6 +1,10 @@
+import { useContext } from 'react';
+import UserContext from '../../contexts/UserContext';
 import './style.css';
 
-const DigitouErrado = ({setAlertErro}) => {
+const DigitouErrado = () => {
+    const {setAlertErro} = useContext(UserContext);
+
     const handleClick = () => {
         setAlertErro(false);
     }

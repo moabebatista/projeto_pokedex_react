@@ -1,12 +1,15 @@
-import React from 'react';
-import './style.css';
+import { useContext } from 'react';
 import coracao from '../../assets/coracao.png';
 import defesa from '../../assets/defesa.png';
 import espada from '../../assets/espadas.png';
 import raio from '../../assets/parafuso.png';
+import UserContext from '../../contexts/UserContext';
+import './style.css';
 
 
-const ModalBusca = ({setModalVisible, pokeBusca, setNamePokemon,  setPokeBusca}) => {
+const ModalBusca = () => {
+    const {setModalVisible, pokeBusca, setNamePokemon,  setPokeBusca} = useContext(UserContext);
+
     const handleCloseModal = () => {
         setModalVisible(false);
         setNamePokemon('');

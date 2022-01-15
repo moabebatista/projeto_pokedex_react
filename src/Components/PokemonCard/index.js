@@ -1,7 +1,10 @@
-import React from 'react';
 import './style.css';
+import UserContext from '../../contexts/UserContext'
+import { useContext } from 'react';
 
-const PokemonCard = ({id, image, name, type, allPokemons, setPokeBusca, setModalVisible, setNamePokemon}) => {
+const PokemonCard = ({id, image, name, type}) => {
+    const { allPokemons, setPokeBusca, setModalVisible, setNamePokemon } = useContext(UserContext);
+
     const ClickCardPokemon = (arrayPokemons, nome) => {
         const pokemon = arrayPokemons.filter( poke => poke.name === nome)
 
